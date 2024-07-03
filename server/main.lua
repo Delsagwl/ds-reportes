@@ -8,9 +8,11 @@ QBCore.Commands.Add('reporte', 'Enviar reporte a staff', {}, false, function(sou
     TriggerClientEvent('ds-reportes:client:mostrarUI', source)
 end, 'user')
 
-RegisterNetEvent('ds-reporte:server:sendReport', function(data)   
+RegisterNetEvent('ds-reporte:server:sendReport', function(data)
+    if not data then return end
+    
     local src = source
-    local discordWebhookURL = '' --------CONFIGURAR URL
+    local discordWebhookURL = 'https://discord.com/api/webhooks/xxxxxxxx/xxxxxxxx'
 
     local Player = QBCore.Functions.GetPlayer(src)
     local firstName = Player.PlayerData.charinfo.firstname

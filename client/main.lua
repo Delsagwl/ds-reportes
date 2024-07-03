@@ -20,10 +20,16 @@ end)
 RegisterNUICallback('enviar', function(reporte, cb)
     SendNUIMessage({type = 'close'})
     SetNuiFocus(false, false)
-    -- Capturar pantalla
-    exports['screenshot-basic']:requestScreenshotUpload('--------CONFIGURAR URL del repositorio', 'image', function(data)
+    exports['screenshot-basic']:requestScreenshotUpload('https://api.fivemanage.com/api/image',
+    'image',
+    {
+        headers = {
+            Authorization = "Configura la key del repositorio"
+        }
+    },
+    function(data)
         local resp = json.decode(data)
-        if resp and resp.url then
+        if resp then
             reporte.screenshot = resp.url
             TriggerServerEvent('ds-reporte:server:sendReport', reporte)
         else

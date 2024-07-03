@@ -27,9 +27,9 @@ Los reportes se envían a un webhook de Discord configurado.
 3. **Configurar el repositorio**:
    - Abre el archivo `client/main.lua` y encuentra la siguiente línea:
      ```lua
-     exports['screenshot-basic']:requestScreenshotUpload('CONFIGURA URL del repositorio', 'image', function(data)
+            Authorization = "Configura la key del repositorio"
      ```
-   - Reemplaza `CONFIGURA URL del repositorio` con tu URL del repositorio o webhook de Discord.
+   - Reemplaza `Configura la key del repositorio` con tu key del fivemanage.
 
 4. **Configurar el Webhook de Discord**:
    - Abre el archivo `server/main.lua` y encuentra la siguiente línea:

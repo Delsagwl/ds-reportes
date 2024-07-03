@@ -24,7 +24,7 @@ body {
     color: #ffffff;
 }
 
-#reporte-text {
+#texto-reporte {
     width: 96%;
     height: 100px;
     margin-bottom: 20px;
@@ -33,14 +33,15 @@ body {
     border-radius: 4px;
 }
 
-#reporte-type {
+#tipo-reporte {
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-#error-message {
+
+#mensaje-error {
     display: none;
     color: #ffffff;
 }
