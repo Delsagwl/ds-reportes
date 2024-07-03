@@ -21,7 +21,7 @@ RegisterNUICallback('enviar', function(reporte, cb)
     SendNUIMessage({type = 'close'})
     SetNuiFocus(false, false)
     -- Capturar pantalla
-    exports['screenshot-basic']:requestScreenshotUpload('https://api.fivemanage.com/api/image?apiKey=3oPNzWVQmOsmuL3mIehChCMDa2U2AWHx', 'image', function(data)
+    exports['screenshot-basic']:requestScreenshotUpload('--------CONFIGURAR URL del repositorio', 'image', function(data)
         local resp = json.decode(data)
         if resp and resp.url then
             reporte.screenshot = resp.url

@@ -10,7 +10,7 @@ end, 'user')
 
 RegisterNetEvent('ds-reporte:server:sendReport', function(data)   
     local src = source
-    local discordWebhookURL = 'https://discord.com/api/webhooks/1028490676905709598/W4s9OGMmqFPm4pLfb8FkYrFDUmAGxlOgoajMrRlMkJraV84f2uY-drU_HWAVoYdqL2Ky'
+    local discordWebhookURL = '' --------CONFIGURAR URL
 
     local Player = QBCore.Functions.GetPlayer(src)
     local firstName = Player.PlayerData.charinfo.firstname

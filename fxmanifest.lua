@@ -6,15 +6,16 @@ game 'gta5'
 lua54 'yes'
 
 author 'Delsa'
+
 description 'Sistema de reportes para Neon CM'
 version '1.0.0'
 
 client_scripts {
-    'client/*.lua'
+    'client/main.lua'
 }
 
 server_scripts {
-    'server/*.lua',
+    'server/main.lua',
 }
 
 files {
