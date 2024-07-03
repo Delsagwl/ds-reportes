@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reporte</title>
+</head>
+<body>
+    <div id="reporte-container">
+        <h2>Reportar un Problema</h2>
+        <textarea id="reporte-text" placeholder="Describe el problema..."></textarea>
+        <h3>Tipo de reporte:</h3>
+        <select id="reporte-type">
+            <option value="bug">Antirol / Hacker</option>
+            <option value="bug">Personaje atrapado o cayendo al vacío</option>
+            <option value="bug">Devolución</option>
+            <option value="bug">Reportar rol con otro usuario</option>
+            <option value="abuse">Bug de script</option>
+            <option value="other">Otro</option>
+        </select>
+        <button id="enviar-reporte">Enviar Reporte a staff</button>
+        <p id="mensaje-error">El reporte debe tener entre 10 y 500 caracteres.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
